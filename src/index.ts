@@ -21,5 +21,16 @@ numbers.forEach(element =>
     return count;
 }
 
+function sortList(numbers :number[]) :number[]
+{
+let sortArr : number[]= [];
+sortArr = numbers.sort();
+return sortArr;
+
+}
+
+const numArray: number[] = [-1, 4, 1, 8];
+//console.log(sortList(numArray));
+
 
 
