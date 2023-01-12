@@ -21,5 +21,15 @@ function sortList(numbers) {
     sortArr = numbers.sort();
     return sortArr;
 }
-const numArray = [-1, 4, 1, 8];
-console.log(sortList(numArray));
+//const numArray: number[] = [-1, 4, 1, 8];
+//console.log(sortList(numArray));
+let number = prompt('enter number (end in -1)', '1');
+const numArray = [];
+while (number != null && number != '-1') {
+    numArray.push(parseFloat(number));
+    number = prompt('enter number (end in -1)', '1');
+}
+alert(`array  - ${numArray}`);
+alert(`average - ${getAverage(numArray)}`);
+alert(`positive - ${getAmountOfPositive(numArray)}`);
+alert(`sort - ${sortList(numArray)}`);
