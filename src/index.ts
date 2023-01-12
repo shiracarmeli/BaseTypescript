@@ -2,14 +2,15 @@
 const getAverage = (numbers :number[]):number=>
 {
     let sum : number = 0;
-let count : number= 0;
-numbers.forEach(element =>
+    let count : number= 0;
+    numbers.forEach(element =>
      {
     sum =sum+element;
     count=count+1;
     });
     return sum/count;
 }
+
 const getAmountOfPositive = (numbers :number[]):number=>
 {
     let count : number= 0;
@@ -23,16 +24,12 @@ const getAmountOfPositive = (numbers :number[]):number=>
 
 const sortList = (numbers :number[]):number[]=>
 {
-    let sortArr : number[]= [];
-    sortArr = numbers.sort();
-    return sortArr;
+    return numbers.sort();
 }
 
 
-//const numArray: number[] = [-1, 4, 1, 8];
-//console.log(sortList(numArray));
- let number = prompt('enter number (end in -1)', '1');
-const numArray: number[] = [];
+ let number:string|null = prompt('enter number (end in -1)', '1');
+ let numArray: number[] = [];
  while(number!=null&&number!='-1')
 {
  numArray.push(parseFloat(number));
